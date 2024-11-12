@@ -42,35 +42,35 @@ public class LoginOrange {
         WebElement txtUsuario = driver.findElement(By.name("username"));
         //WebElement btonBuscar = driver.findElement(By.className("nav-icon-search"));
         //txtBuscar.click();
-        takeScreenShot(driver, screenShotDir, "screenshot2.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot1.png" );
         //Thread.sleep(1000);
 
         //Paso 2. Ingresar texto
         txtUsuario.sendKeys("Admin");
-        takeScreenShot(driver, screenShotDir, "screenshot3.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot2.png" );
         //Thread.sleep(1000);
 
         //Ingreso Contraseña
         WebElement txtContrasena = driver.findElement(By.name("password"));
-        takeScreenShot(driver, screenShotDir, "screenshot2.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot3.png" );
         //Thread.sleep(1000);
 
         txtContrasena.sendKeys("admin123");
-        takeScreenShot(driver, screenShotDir, "screenshot3.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot4.png" );
         //Thread.sleep(1000);
 
         //Doy clic en el boton Login
         WebElement btonLogin = driver.findElement(By.className("orangehrm-login-button"));
-        takeScreenShot(driver, screenShotDir, "screenshot2.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot5.png" );
         //Thread.sleep(1000);
 
         btonLogin.click();
-        takeScreenShot(driver, screenShotDir, "screenshot4.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot6.png" );
         //Thread.sleep(1000);
 
         //Selecciono la opcion Recruitment
         WebElement recruitmentMenu = driver.findElement(By.xpath("//nav//span[text()='Recruitment']"));
-        takeScreenShot(driver, screenShotDir, "screenshot.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot7.png" );
 
 
         recruitmentMenu.click();
@@ -78,7 +78,7 @@ public class LoginOrange {
 
         //clic en Add
         WebElement addButton = driver.findElement(By.cssSelector("button.oxd-button.oxd-button--secondary i.oxd-icon.bi-plus"));
-        takeScreenShot(driver, screenShotDir, "screenshot.png" );
+        takeScreenShot(driver, screenShotDir, "screenshot8.png" );
 
         addButton.click();
 
